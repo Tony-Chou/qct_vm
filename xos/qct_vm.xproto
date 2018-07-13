@@ -1,0 +1,12 @@
+option app_label = "qct_vm";
+option name = "qct_vm";
+
+message QCT_vm_Service (Service){
+    option verbose_name = "QCT_vm Service";
+    required string service_message = 1 [help_text = "Service Message to Display", max_length = 254, null = False, db_index = False, blank = False];
+}
+
+message QCT_vm_ServiceInstance (TenantWithContainer){
+     option verbose_name = "QCT_vm Service Instance";
+     required string tenant_message = 1 [help_text = "Tenant Message to Display", max_length = 254, null = False, db_index = False, blank = False];
+}
