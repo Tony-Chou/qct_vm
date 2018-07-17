@@ -35,7 +35,7 @@ class SyncQCT_vm_ServiceInstance(SyncInstanceUsingAnsible):
 
     template_name = "qct_vm_serviceinstance_playbook.yaml"
 
-    service_key_name = "/opt/xos/synchronizers/qct_vm/service_private_key"
+#    service_key_name = "/opt/xos/synchronizers/qct_vm/service_private_key"
     print "123456"
 
     def __init__(self, *args, **kwargs):
